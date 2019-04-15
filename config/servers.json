@@ -1,0 +1,166 @@
+{
+  "defensoria": {
+    "1": {
+      "host": "127.0.0.1:80",
+      "hostname": "127.0.0.1:80",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://localhost/defensor/",
+      "dest": "http://localhost/defensor/",
+      "root-path": "defensor/",
+      "type-url": "dns",
+      "type-env": "dev"
+    },
+    "2": {
+      "host": "localhost:80",
+      "hostname": "localhost",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://localhost/defensor/",
+      "dest": "http://localhost/defensor/",
+      "root-path": "defensor/",
+      "type-url": "dns",
+      "type-env": "dev"
+    },
+    "3": {
+      "host": "local.defensor.com",
+      "hostname": "local.defensor.com",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://local.defensor.com/",
+      "dest": "http://local.defensor.com/",
+      "root-path": "defensor/",
+      "type-url": "dns",
+      "type-env": "dev"
+    },
+    "4": {
+      "host": "desarrollo.defensor.com.bo",
+      "hostname": "desarrollo.defensor.com.bo",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://desarrollo.defensor.com.bo/",
+      "dest": "http://desarrollo.defensor.com.bo/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "test"
+    },
+    "5": {
+      "host": "desarrollo.defensor.com.bo",
+      "hostname": "desarrollo.defensor.com.bo",
+      "protocol": "https:",
+      "port": "80",
+      "origin": "https://desarrollo.defensor.com.bo/",
+      "dest": "https://desarrollo.defensor.com.bo/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-sec": "ssh",
+      "type-env": "test"
+    },
+    "6": {
+      "host": "192.168.2.21",
+      "hostname": "192.168.2.21",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://192.168.2.21/",
+      "dest": "http://192.168.2.21/",
+      "root-path": "",
+      "type-url": "ip",
+      "type-env": "test"
+    },
+    "7": {
+      "host": "192.168.2.103",
+      "hostname": "192.168.2.103",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://192.168.2.103/",
+      "dest": "http://192.168.2.103/",
+      "root-path": "",
+      "type-url": "ip",
+      "type-env": "dev"
+    },
+    "8": {
+      "host": "192.168.2.21",
+      "hostname": "192.168.2.21",
+      "protocol": "https:",
+      "port": "80",
+      "origin": "https://192.168.2.21/",
+      "dest": "https://192.168.2.21/",
+      "root-path": "",
+      "type-url": "ip",
+      "type-env": "dev"
+    },
+    "9": {
+      "host": "localhost:4200",
+      "hostname": "localhost",
+      "protocol": "http:",
+      "port": "4200",
+      "origin": "http://localhost:4200/",
+      "dest": "http://local.defensor.com/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "dev",
+      "type-frame": "angular"
+    },
+    "10": {
+      "host": "192.168.1.11",
+      "hostname": "192.168.1.11",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://192.168.2.11/",
+      "dest": "http://192.168.2.11/",
+      "root-path": "",
+      "type-url": "ip",
+      "type-env": "test"
+    }
+  },
+  "herbalife": {
+    "1": {
+      "host": "local.herbalife.com",
+      "hostname": "local.herbalife.com",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://local.herbalife.com/",
+      "dest": "http://local.herbalife.com/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "dev"
+    }
+  },
+  "ibolsa": {
+    "1": {
+      "host": "local.ibolsast.com.bo",
+      "hostname": "local.ibolsast.com.bo",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://local.ibolsast.com.bo/",
+      "dest": "http://local.ibolsast.com.bo/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "dev"
+    }
+  },
+  "estic": {
+    "1": {
+      "host": "local.estic.com.bo",
+      "hostname": "local.estic.com.bo",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://local.estic.com.bo/",
+      "dest": "http://local.estic.com.bo/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "prod"
+    },
+    "2": {
+      "host": "local.estic.com",
+      "hostname": "local.estic.com",
+      "protocol": "http:",
+      "port": "80",
+      "origin": "http://local.estic.com/",
+      "dest": "http://local.estic.com/",
+      "root-path": "",
+      "type-url": "dns",
+      "type-env": "prod"
+    }
+  }
+}
