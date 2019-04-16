@@ -1,0 +1,3 @@
+[submodule "proyects/ibolsast-crm"]
+	path = proyects/ibolsast-crm
+	url = https://rafarobert@github.com/rafarobert/ibolsast-crm.git
