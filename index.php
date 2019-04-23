@@ -64,6 +64,7 @@
  */
 $system_path = 'isys';
 
+$_SERVER['PWD'] = isset($_SERVER['ESTIC_ORIGIN']) ? '../' : $_SERVER['PWD'];
 
 // Path to the system folder
 define('PWD', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD'].'/' : ''));
