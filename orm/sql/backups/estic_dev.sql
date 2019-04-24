@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 20-04-2019 a las 09:06:58
+-- Tiempo de generación: 24-04-2019 a las 16:20:22
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.14
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `estic_dev`
+-- Base de datos: `herbalife_dev`
 --
 
 -- --------------------------------------------------------
@@ -130,84 +130,6 @@ CREATE TABLE `es_files` (
   `date_created` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Volcado de datos para la tabla `es_files`
---
-
-INSERT INTO `es_files` (`id_file`, `name`, `url`, `ext`, `raw_name`, `full_path`, `path`, `width`, `height`, `size`, `library`, `nro_thumbs`, `id_parent`, `thumb_marker`, `type`, `x`, `y`, `fix_width`, `fix_height`, `status`, `change_count`, `id_user_modified`, `id_user_created`, `date_modified`, `date_created`) VALUES
-(1, '1544091492_1544054382Documentalcarceles.png', '/assets/files/publicacion/1544091492_1544054382Documentalcarceles.png', '.png', '1544054382Documentalcarceles', 'assets/files/publicacion/1544054382Documentalcarceles.png', 'assets/files/publicacion/', 1260, 1778, '1760', '', 3, NULL, '', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:19:26', '2018-12-06 06:19:26'),
-(2, '1544091492_1544054382Documentalcarceles-thumb_50.png', '/assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_50.png', '.png', '1544091492_1544054382Documentalcarceles-thumb_50.png', 'assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_50.png', 'assets/files/publicacion/thumbs/', 36, 50, '1760', 'gd2', NULL, NULL, '-thumb_50', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:19:34', '2018-12-06 06:19:34'),
-(3, '1544091492_1544054382Documentalcarceles-thumb_450.png', '/assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_450.png', '.png', '1544091492_1544054382Documentalcarceles-thumb_450.png', 'assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_450.png', 'assets/files/publicacion/thumbs/', 319, 450, '1760', 'gd2', NULL, NULL, '-thumb_450', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:19:34', '2018-12-06 06:19:34'),
-(4, '1544091492_1544054382Documentalcarceles-thumb_850.png', '/assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_850.png', '.png', '1544091492_1544054382Documentalcarceles-thumb_850.png', 'assets/files/publicacion/thumbs/1544091492_1544054382Documentalcarceles-thumb_850.png', 'assets/files/publicacion/thumbs/', 603, 850, '1760', 'gd2', NULL, NULL, '-thumb_850', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:19:34', '2018-12-06 06:19:34'),
-(5, '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm.png', '/assets/files/publicacion/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm.png', '.png', '1544054465Capturadepantalla2018-12-04alas55639pm', 'assets/files/publicacion/1544054465Capturadepantalla2018-12-04alas55639pm.png', 'assets/files/publicacion/', 1772, 1312, '4398', '', 3, NULL, '', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:20:15', '2018-12-06 06:20:15'),
-(6, '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_50.png', '/assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_50.png', '.png', '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_50.png', 'assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_50.png', 'assets/files/publicacion/thumbs/', 50, 38, '4398', 'gd2', NULL, NULL, '-thumb_50', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:20:15', '2018-12-06 06:20:15'),
-(7, '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_450.png', '/assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_450.png', '.png', '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_450.png', 'assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_450.png', 'assets/files/publicacion/thumbs/', 450, 334, '4398', 'gd2', NULL, NULL, '-thumb_450', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:20:15', '2018-12-06 06:20:15'),
-(8, '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_850.png', '/assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_850.png', '.png', '1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_850.png', 'assets/files/publicacion/thumbs/1544091613_1544054465Capturadepantalla2018-12-04alas55639pm-thumb_850.png', 'assets/files/publicacion/thumbs/', 850, 630, '4398', 'gd2', NULL, NULL, '-thumb_850', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:20:15', '2018-12-06 06:20:15'),
-(9, '1544091722_1544053215PCD.JPG', '/assets/files/publicacion/1544091722_1544053215PCD.JPG', '.JPG', '1544053215PCD', 'assets/files/publicacion/1544053215PCD.JPG', 'assets/files/publicacion/', 5184, 3456, '6352', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:08', '2018-12-06 06:22:08'),
-(10, '1544091722_1544053215PCD-thumb_50.JPG', '/assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_50.JPG', '.JPG', '1544091722_1544053215PCD-thumb_50.JPG', 'assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_50.JPG', 'assets/files/publicacion/thumbs/', 50, 34, '6352', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:08', '2018-12-06 06:22:08'),
-(11, '1544091722_1544053215PCD-thumb_450.JPG', '/assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_450.JPG', '.JPG', '1544091722_1544053215PCD-thumb_450.JPG', 'assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_450.JPG', 'assets/files/publicacion/thumbs/', 450, 300, '6352', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:08', '2018-12-06 06:22:08'),
-(12, '1544091722_1544053215PCD-thumb_850.JPG', '/assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_850.JPG', '.JPG', '1544091722_1544053215PCD-thumb_850.JPG', 'assets/files/publicacion/thumbs/1544091722_1544053215PCD-thumb_850.JPG', 'assets/files/publicacion/thumbs/', 850, 567, '6352', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:08', '2018-12-06 06:22:08'),
-(13, '1544091759_1544054382Documentalcarceles.png', '/assets/files/publicacion/1544091759_1544054382Documentalcarceles.png', '.png', '1544054382Documentalcarceles', 'assets/files/publicacion/1544054382Documentalcarceles.png', 'assets/files/publicacion/', 1260, 1778, '1760', '', 3, NULL, '', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:41', '2018-12-06 06:22:41'),
-(14, '1544091759_1544054382Documentalcarceles-thumb_50.png', '/assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_50.png', '.png', '1544091759_1544054382Documentalcarceles-thumb_50.png', 'assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_50.png', 'assets/files/publicacion/thumbs/', 36, 50, '1760', 'gd2', NULL, NULL, '-thumb_50', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:41', '2018-12-06 06:22:41'),
-(15, '1544091759_1544054382Documentalcarceles-thumb_450.png', '/assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_450.png', '.png', '1544091759_1544054382Documentalcarceles-thumb_450.png', 'assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_450.png', 'assets/files/publicacion/thumbs/', 319, 450, '1760', 'gd2', NULL, NULL, '-thumb_450', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:41', '2018-12-06 06:22:41'),
-(16, '1544091759_1544054382Documentalcarceles-thumb_850.png', '/assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_850.png', '.png', '1544091759_1544054382Documentalcarceles-thumb_850.png', 'assets/files/publicacion/thumbs/1544091759_1544054382Documentalcarceles-thumb_850.png', 'assets/files/publicacion/thumbs/', 603, 850, '1760', 'gd2', NULL, NULL, '-thumb_850', 'png', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:22:41', '2018-12-06 06:22:41'),
-(17, '1544091794_1544053215PCD.JPG', '/assets/files/publicacion/1544091794_1544053215PCD.JPG', '.JPG', '1544053215PCD', 'assets/files/publicacion/1544053215PCD.JPG', 'assets/files/publicacion/', 5184, 3456, '6352', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:23:23', '2018-12-06 06:23:23'),
-(18, '1544091794_1544053215PCD-thumb_50.JPG', '/assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_50.JPG', '.JPG', '1544091794_1544053215PCD-thumb_50.JPG', 'assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_50.JPG', 'assets/files/publicacion/thumbs/', 50, 34, '6352', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:23:23', '2018-12-06 06:23:23'),
-(19, '1544091794_1544053215PCD-thumb_450.JPG', '/assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_450.JPG', '.JPG', '1544091794_1544053215PCD-thumb_450.JPG', 'assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_450.JPG', 'assets/files/publicacion/thumbs/', 450, 300, '6352', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:23:23', '2018-12-06 06:23:23'),
-(20, '1544091794_1544053215PCD-thumb_850.JPG', '/assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_850.JPG', '.JPG', '1544091794_1544053215PCD-thumb_850.JPG', 'assets/files/publicacion/thumbs/1544091794_1544053215PCD-thumb_850.JPG', 'assets/files/publicacion/thumbs/', 850, 567, '6352', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 06:23:23', '2018-12-06 06:23:23'),
-(21, '1544095388_4563609426950172707225774958763223265312768o.jpg', '/assets/files/publicacion/1544095388_4563609426950172707225774958763223265312768o.jpg', '.jpg', '4563609426950172707225774958763223265312768o', 'assets/files/publicacion/4563609426950172707225774958763223265312768o.jpg', 'assets/files/publicacion/', 1257, 1280, '161', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:09', '2018-12-06 07:23:09'),
-(22, '1544095388_4563609426950172707225774958763223265312768o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_50.jpg', '.jpg', '1544095388_4563609426950172707225774958763223265312768o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 50, '161', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:09', '2018-12-06 07:23:09'),
-(23, '1544095388_4563609426950172707225774958763223265312768o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_450.jpg', '.jpg', '1544095388_4563609426950172707225774958763223265312768o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 442, 450, '161', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:09', '2018-12-06 07:23:09'),
-(24, '1544095388_4563609426950172707225774958763223265312768o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_850.jpg', '.jpg', '1544095388_4563609426950172707225774958763223265312768o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095388_4563609426950172707225774958763223265312768o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 835, 850, '161', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:09', '2018-12-06 07:23:09'),
-(25, '1544095417_4582431126966200772289637699067398812336128o.jpg', '/assets/files/publicacion/1544095417_4582431126966200772289637699067398812336128o.jpg', '.jpg', '4582431126966200772289637699067398812336128o', 'assets/files/publicacion/4582431126966200772289637699067398812336128o.jpg', 'assets/files/publicacion/', 1024, 1024, '168', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:37', '2018-12-06 07:23:37'),
-(26, '1544095417_4582431126966200772289637699067398812336128o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_50.jpg', '.jpg', '1544095417_4582431126966200772289637699067398812336128o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 50, '168', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:37', '2018-12-06 07:23:37'),
-(27, '1544095417_4582431126966200772289637699067398812336128o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_450.jpg', '.jpg', '1544095417_4582431126966200772289637699067398812336128o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 450, '168', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:37', '2018-12-06 07:23:37'),
-(28, '1544095417_4582431126966200772289637699067398812336128o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_850.jpg', '.jpg', '1544095417_4582431126966200772289637699067398812336128o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095417_4582431126966200772289637699067398812336128o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 850, '168', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:23:37', '2018-12-06 07:23:37'),
-(29, '1544095445_4570449626963671005875948650640750683357184o.jpg', '/assets/files/publicacion/1544095445_4570449626963671005875948650640750683357184o.jpg', '.jpg', '4570449626963671005875948650640750683357184o', 'assets/files/publicacion/4570449626963671005875948650640750683357184o.jpg', 'assets/files/publicacion/', 640, 1029, '103', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:06', '2018-12-06 07:24:06'),
-(30, '1544095445_4570449626963671005875948650640750683357184o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_50.jpg', '.jpg', '1544095445_4570449626963671005875948650640750683357184o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 32, 50, '103', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:06', '2018-12-06 07:24:06'),
-(31, '1544095445_4570449626963671005875948650640750683357184o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_450.jpg', '.jpg', '1544095445_4570449626963671005875948650640750683357184o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 280, 450, '103', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:06', '2018-12-06 07:24:06'),
-(32, '1544095445_4570449626963671005875948650640750683357184o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_850.jpg', '.jpg', '1544095445_4570449626963671005875948650640750683357184o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095445_4570449626963671005875948650640750683357184o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 529, 850, '103', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:06', '2018-12-06 07:24:06'),
-(33, '1544095495_4608551926995839335992446310428927835766784n.jpg', '/assets/files/publicacion/1544095495_4608551926995839335992446310428927835766784n.jpg', '.jpg', '4608551926995839335992446310428927835766784n', 'assets/files/publicacion/4608551926995839335992446310428927835766784n.jpg', 'assets/files/publicacion/', 953, 466, '57', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:55', '2018-12-06 07:24:55'),
-(34, '1544095495_4608551926995839335992446310428927835766784n-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_50.jpg', '.jpg', '1544095495_4608551926995839335992446310428927835766784n-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 25, '57', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:55', '2018-12-06 07:24:55'),
-(35, '1544095495_4608551926995839335992446310428927835766784n-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_450.jpg', '.jpg', '1544095495_4608551926995839335992446310428927835766784n-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 221, '57', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:55', '2018-12-06 07:24:55'),
-(36, '1544095495_4608551926995839335992446310428927835766784n-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_850.jpg', '.jpg', '1544095495_4608551926995839335992446310428927835766784n-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095495_4608551926995839335992446310428927835766784n-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 416, '57', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:24:55', '2018-12-06 07:24:55'),
-(37, '1544095535_4619001926997495202493521998775739725381632o.jpg', '/assets/files/publicacion/1544095535_4619001926997495202493521998775739725381632o.jpg', '.jpg', '4619001926997495202493521998775739725381632o', 'assets/files/publicacion/4619001926997495202493521998775739725381632o.jpg', 'assets/files/publicacion/', 1024, 768, '76', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:36', '2018-12-06 07:25:36'),
-(38, '1544095535_4619001926997495202493521998775739725381632o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_50.jpg', '.jpg', '1544095535_4619001926997495202493521998775739725381632o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 38, '76', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:36', '2018-12-06 07:25:36'),
-(39, '1544095535_4619001926997495202493521998775739725381632o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_450.jpg', '.jpg', '1544095535_4619001926997495202493521998775739725381632o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 338, '76', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:36', '2018-12-06 07:25:36'),
-(40, '1544095535_4619001926997495202493521998775739725381632o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_850.jpg', '.jpg', '1544095535_4619001926997495202493521998775739725381632o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095535_4619001926997495202493521998775739725381632o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 638, '76', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:36', '2018-12-06 07:25:36'),
-(41, '1544095536_462219642699583940265910517293076675297280o.jpg', '/assets/files/publicacion/1544095536_462219642699583940265910517293076675297280o.jpg', '.jpg', '462219642699583940265910517293076675297280o', 'assets/files/publicacion/462219642699583940265910517293076675297280o.jpg', 'assets/files/publicacion/', 1024, 768, '101', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:37', '2018-12-06 07:25:37'),
-(42, '1544095536_462219642699583940265910517293076675297280o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_50.jpg', '.jpg', '1544095536_462219642699583940265910517293076675297280o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 38, '101', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:37', '2018-12-06 07:25:37'),
-(43, '1544095536_462219642699583940265910517293076675297280o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_450.jpg', '.jpg', '1544095536_462219642699583940265910517293076675297280o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 338, '101', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:37', '2018-12-06 07:25:37'),
-(44, '1544095536_462219642699583940265910517293076675297280o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_850.jpg', '.jpg', '1544095536_462219642699583940265910517293076675297280o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095536_462219642699583940265910517293076675297280o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 638, '101', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:37', '2018-12-06 07:25:37'),
-(45, '1544095537_4608971726995839669325745434162523215495168o.jpg', '/assets/files/publicacion/1544095537_4608971726995839669325745434162523215495168o.jpg', '.jpg', '4608971726995839669325745434162523215495168o', 'assets/files/publicacion/4608971726995839669325745434162523215495168o.jpg', 'assets/files/publicacion/', 1024, 768, '117', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:38', '2018-12-06 07:25:38'),
-(46, '1544095537_4608971726995839669325745434162523215495168o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_50.jpg', '.jpg', '1544095537_4608971726995839669325745434162523215495168o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 38, '117', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:38', '2018-12-06 07:25:38'),
-(47, '1544095537_4608971726995839669325745434162523215495168o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_450.jpg', '.jpg', '1544095537_4608971726995839669325745434162523215495168o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 338, '117', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:38', '2018-12-06 07:25:38'),
-(48, '1544095537_4608971726995839669325745434162523215495168o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_850.jpg', '.jpg', '1544095537_4608971726995839669325745434162523215495168o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095537_4608971726995839669325745434162523215495168o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 638, '117', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:25:38', '2018-12-06 07:25:38'),
-(49, '1544095681_noticia3636.jpg', '/assets/files/publicacion/1544095681_noticia3636.jpg', '.jpg', 'noticia3636', 'assets/files/publicacion/noticia3636.jpg', 'assets/files/publicacion/', 350, 233, '14', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:28:02', '2018-12-06 07:28:02'),
-(50, '1544095681_noticia3636-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_50.jpg', '.jpg', '1544095681_noticia3636-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 34, '14', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:28:02', '2018-12-06 07:28:02'),
-(51, '1544095681_noticia3636-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_450.jpg', '.jpg', '1544095681_noticia3636-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 300, '14', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:28:02', '2018-12-06 07:28:02'),
-(52, '1544095681_noticia3636-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_850.jpg', '.jpg', '1544095681_noticia3636-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095681_noticia3636-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 566, '14', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:28:02', '2018-12-06 07:28:02'),
-(53, '1544095747_465165802705707819653522461322716436234240o.jpg', '/assets/files/publicacion/1544095747_465165802705707819653522461322716436234240o.jpg', '.jpg', '465165802705707819653522461322716436234240o', 'assets/files/publicacion/465165802705707819653522461322716436234240o.jpg', 'assets/files/publicacion/', 1032, 581, '61', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:29:07', '2018-12-06 07:29:07'),
-(54, '1544095747_465165802705707819653522461322716436234240o-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_50.jpg', '.jpg', '1544095747_465165802705707819653522461322716436234240o-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 29, '61', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:29:07', '2018-12-06 07:29:07'),
-(55, '1544095747_465165802705707819653522461322716436234240o-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_450.jpg', '.jpg', '1544095747_465165802705707819653522461322716436234240o-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 254, '61', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:29:07', '2018-12-06 07:29:07'),
-(56, '1544095747_465165802705707819653522461322716436234240o-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_850.jpg', '.jpg', '1544095747_465165802705707819653522461322716436234240o-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544095747_465165802705707819653522461322716436234240o-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 479, '61', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 07:29:07', '2018-12-06 07:29:07'),
-(57, '1544106432_Calendario-Rojo-hojas-CORRECCION-07.jpg', '/assets/files/publicacion/1544106432_Calendario-Rojo-hojas-CORRECCION-07.jpg', '.jpg', 'Calendario-Rojo-hojas-CORRECCION-07', 'assets/files/publicacion/Calendario-Rojo-hojas-CORRECCION-07.jpg', 'assets/files/publicacion/', 1270, 974, '379', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:12', '2018-12-06 10:27:12'),
-(58, '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_50.jpg', '.jpg', '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 39, '379', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:13', '2018-12-06 10:27:13'),
-(59, '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_450.jpg', '.jpg', '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 346, '379', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:13', '2018-12-06 10:27:13'),
-(60, '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_850.jpg', '.jpg', '1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544106432_Calendario-Rojo-hojas-CORRECCION-07-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 652, '379', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:13', '2018-12-06 10:27:13'),
-(61, '1544106446_Diversidades-Sexuales-y-de-genero.JPG', '/assets/files/publicacion/1544106446_Diversidades-Sexuales-y-de-genero.JPG', '.JPG', 'Diversidades-Sexuales-y-de-genero', 'assets/files/publicacion/Diversidades-Sexuales-y-de-genero.JPG', 'assets/files/publicacion/', 5184, 3456, '5822', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:30', '2018-12-06 10:27:30'),
-(62, '1544106446_Diversidades-Sexuales-y-de-genero-thumb_50.JPG', '/assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_50.JPG', '.JPG', '1544106446_Diversidades-Sexuales-y-de-genero-thumb_50.JPG', 'assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_50.JPG', 'assets/files/publicacion/thumbs/', 50, 34, '5822', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:30', '2018-12-06 10:27:30'),
-(63, '1544106446_Diversidades-Sexuales-y-de-genero-thumb_450.JPG', '/assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_450.JPG', '.JPG', '1544106446_Diversidades-Sexuales-y-de-genero-thumb_450.JPG', 'assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_450.JPG', 'assets/files/publicacion/thumbs/', 450, 300, '5822', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:30', '2018-12-06 10:27:30'),
-(64, '1544106446_Diversidades-Sexuales-y-de-genero-thumb_850.JPG', '/assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_850.JPG', '.JPG', '1544106446_Diversidades-Sexuales-y-de-genero-thumb_850.JPG', 'assets/files/publicacion/thumbs/1544106446_Diversidades-Sexuales-y-de-genero-thumb_850.JPG', 'assets/files/publicacion/thumbs/', 850, 567, '5822', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:30', '2018-12-06 10:27:30'),
-(65, '1544106477_Calendario-Rojo-hojas-CORRECCION-23.jpg', '/assets/files/publicacion/1544106477_Calendario-Rojo-hojas-CORRECCION-23.jpg', '.jpg', 'Calendario-Rojo-hojas-CORRECCION-23', 'assets/files/publicacion/Calendario-Rojo-hojas-CORRECCION-23.jpg', 'assets/files/publicacion/', 1270, 974, '928', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:58', '2018-12-06 10:27:58'),
-(66, '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_50.jpg', '.jpg', '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 39, '928', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:58', '2018-12-06 10:27:58'),
-(67, '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_450.jpg', '.jpg', '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 346, '928', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:58', '2018-12-06 10:27:58'),
-(68, '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_850.jpg', '.jpg', '1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544106477_Calendario-Rojo-hojas-CORRECCION-23-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 652, '928', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:27:58', '2018-12-06 10:27:58'),
-(69, '1544106488_Calendario-Rojo-hojas-CORRECCION-21.jpg', '/assets/files/publicacion/1544106488_Calendario-Rojo-hojas-CORRECCION-21.jpg', '.jpg', 'Calendario-Rojo-hojas-CORRECCION-21', 'assets/files/publicacion/Calendario-Rojo-hojas-CORRECCION-21.jpg', 'assets/files/publicacion/', 1270, 974, '622', '', 3, NULL, '', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:28:09', '2018-12-06 10:28:09'),
-(70, '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_50.jpg', '/assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_50.jpg', '.jpg', '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_50.jpg', 'assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_50.jpg', 'assets/files/publicacion/thumbs/', 50, 39, '622', 'gd2', NULL, NULL, '-thumb_50', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:28:09', '2018-12-06 10:28:09'),
-(71, '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_450.jpg', '/assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_450.jpg', '.jpg', '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_450.jpg', 'assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_450.jpg', 'assets/files/publicacion/thumbs/', 450, 346, '622', 'gd2', NULL, NULL, '-thumb_450', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:28:09', '2018-12-06 10:28:09'),
-(72, '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_850.jpg', '/assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_850.jpg', '.jpg', '1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_850.jpg', 'assets/files/publicacion/thumbs/1544106488_Calendario-Rojo-hojas-CORRECCION-21-thumb_850.jpg', 'assets/files/publicacion/thumbs/', 850, 652, '622', 'gd2', NULL, NULL, '-thumb_850', 'jpeg', NULL, NULL, NULL, NULL, 'ENABLED', 0, 1, 1, '2018-12-06 10:28:09', '2018-12-06 10:28:09');
-
 -- --------------------------------------------------------
 
 --
@@ -260,7 +182,7 @@ CREATE TABLE `es_modules` (
 --
 
 INSERT INTO `es_modules` (`id_module`, `name`, `description`, `status`, `change_count`, `id_user_modified`, `id_user_created`, `date_modified`, `date_created`) VALUES
-(1, 'Administrador del sistema base', 'Modulo para la administracion del nucleo del sistema', 'ENABLED', 0, 1, 1, '2018-09-06 13:00:58', '2018-09-06 12:47:30'),
+(1, 'Administrador del sistema estic', 'Modulo para la administracion del nucleo del sistema', 'ENABLED', 0, 1, 1, '2018-09-06 13:00:58', '2018-09-06 12:47:30'),
 (3, 'Administrador del sistema admin', 'Modulo para la administracion del nucleo estic', 'ENABLED', 0, 1, 1, '2018-09-06 12:48:32', '2018-09-06 12:48:32');
 
 -- --------------------------------------------------------
@@ -369,18 +291,18 @@ CREATE TABLE `es_tables` (
 --
 
 INSERT INTO `es_tables` (`id_table`, `id_module`, `id_role`, `title`, `table_name`, `listed`, `description`, `icon`, `url`, `url_edit`, `url_index`, `status`, `change_count`, `id_user_modified`, `id_user_created`, `date_modified`, `date_created`) VALUES
-(110, 1, 1, 'Cities', 'ci_cities', 'enabled', '', '', 'base/cities', 'base/cities/edit', 'base/cities/index', 'enabled', 117, 1, 1, '2019-02-19 14:42:46', '2018-09-27 18:31:57'),
-(111, 1, 1, 'Domains', 'ci_domains', 'enabled', '', '', 'base/domains', 'base/domains/edit', 'base/domains/index', 'enabled', 99, 1, 1, '2019-02-19 13:00:40', '2018-11-21 16:44:40'),
-(112, 1, 1, 'Logs', 'ci_logs', 'enabled', '', '', 'base/logs', 'base/logs/edit', 'base/logs/index', 'enabled', 100, 1, 1, '2019-02-19 13:00:41', '2018-11-21 16:44:40'),
-(120, 1, 1, 'Provincias', 'ci_provincias', 'enabled', '', '', 'base/provincias', 'base/provincias/edit', 'base/provincias/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-09-27 18:31:59'),
-(130, 1, 1, 'Roles', 'ci_roles', 'enabled', '', '', 'base/roles', 'base/roles/edit', 'base/roles/index', 'enabled', 99, 1, 1, '2019-02-19 13:00:41', '2018-11-16 18:50:58'),
-(131, 1, 1, 'Users Roles', 'ci_users_roles', 'enabled', '', '', 'base/users_roles', 'base/users_roles/edit', 'base/users_roles/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-11-16 18:50:58'),
-(140, 1, 1, 'Tables', 'ci_tables', 'enabled', '', '', 'base/tables', 'base/tables/edit', 'base/tables/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-09-27 18:32:02'),
-(141, 1, 1, 'Tables Roles', 'ci_tables_roles', 'enabled', '', '', 'base/tables_roles', 'base/tables_roles/edit', 'base/tables_roles/index', 'enabled', 97, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:02'),
-(150, 1, 1, 'Sesiones del Sistema', 'ci_sessions', 'enabled', '', '', 'base/sessions', 'base/sessions/edit', 'base/sessions/index', 'enabled', 97, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:04'),
-(160, 1, 1, 'Files', 'ci_files', 'enabled', '', '', 'base/files', 'base/files/edit', 'base/files/index', 'enabled', 100, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:05'),
-(170, 1, 1, 'Users', 'ci_users', 'enabled', '', '', 'base/users', 'base/users/edit', 'base/users/index', 'enabled', 114, 1, 1, '2019-02-19 13:00:43', '2018-09-27 18:32:06'),
-(180, 1, 1, 'Modules', 'ci_modules', 'enabled', '', '', 'base/modules', 'base/modules/edit', 'base/modules/index', 'enabled', 94, 1, 1, '2019-02-19 13:00:43', '2018-09-27 18:32:08');
+(110, 1, 1, 'Cities', 'es_cities', 'enabled', '', '', 'estic/cities', 'estic/cities/edit', 'estic/cities/index', 'enabled', 117, 1, 1, '2019-02-19 14:42:46', '2018-09-27 18:31:57'),
+(111, 1, 1, 'Domains', 'es_domains', 'enabled', '', '', 'estic/domains', 'estic/domains/edit', 'estic/domains/index', 'enabled', 99, 1, 1, '2019-02-19 13:00:40', '2018-11-21 16:44:40'),
+(112, 1, 1, 'Logs', 'es_logs', 'enabled', '', '', 'estic/logs', 'estic/logs/edit', 'estic/logs/index', 'enabled', 100, 1, 1, '2019-02-19 13:00:41', '2018-11-21 16:44:40'),
+(120, 1, 1, 'Provincias', 'es_provincias', 'enabled', '', '', 'estic/provincias', 'estic/provincias/edit', 'estic/provincias/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-09-27 18:31:59'),
+(130, 1, 1, 'Roles', 'es_roles', 'enabled', '', '', 'estic/roles', 'estic/roles/edit', 'estic/roles/index', 'enabled', 99, 1, 1, '2019-02-19 13:00:41', '2018-11-16 18:50:58'),
+(131, 1, 1, 'Users Roles', 'es_users_roles', 'enabled', '', '', 'estic/users_roles', 'estic/users_roles/edit', 'estic/users_roles/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-11-16 18:50:58'),
+(140, 1, 1, 'Tables', 'es_tables', 'enabled', '', '', 'estic/tables', 'estic/tables/edit', 'estic/tables/index', 'enabled', 98, 1, 1, '2019-02-19 13:00:41', '2018-09-27 18:32:02'),
+(141, 1, 1, 'Tables Roles', 'es_tables_roles', 'enabled', '', '', 'estic/tables_roles', 'estic/tables_roles/edit', 'estic/tables_roles/index', 'enabled', 97, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:02'),
+(150, 1, 1, 'Sesiones del Sistema', 'es_sessions', 'enabled', '', '', 'estic/sessions', 'estic/sessions/edit', 'estic/sessions/index', 'enabled', 97, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:04'),
+(160, 1, 1, 'Files', 'es_files', 'enabled', '', '', 'estic/files', 'estic/files/edit', 'estic/files/index', 'enabled', 100, 1, 1, '2019-02-19 13:00:42', '2018-09-27 18:32:05'),
+(170, 1, 1, 'Users', 'es_users', 'enabled', '', '', 'estic/users', 'estic/users/edit', 'estic/users/index', 'enabled', 114, 1, 1, '2019-02-19 13:00:43', '2018-09-27 18:32:06'),
+(180, 1, 1, 'Modules', 'es_modules', 'enabled', '', '', 'estic/modules', 'estic/modules/edit', 'estic/modules/index', 'enabled', 94, 1, 1, '2019-02-19 13:00:43', '2018-09-27 18:32:08');
 
 -- --------------------------------------------------------
 
@@ -470,7 +392,7 @@ CREATE TABLE `es_users` (
 --
 
 INSERT INTO `es_users` (`id_user`, `name`, `lastname`, `username`, `email`, `address`, `password`, `birthdate`, `age`, `carnet`, `sexo`, `phone_1`, `phone_2`, `cellphone_1`, `cellphone_2`, `ids_files`, `id_cover_picture`, `id_city`, `id_provincia`, `id_role`, `signin_method`, `uid`, `change_count`, `status`, `date_modified`, `date_created`) VALUES
-(1, 'Rafael', 'Gutierrez', '', 'rafael@estic.gob.bo', '', '35bb6b2292c543a3bea479606e6755a9034aca3fd0a3be02180890ad5ea673a334dec82fec386880b7010ace74e4957d9bbf6e7c0e9182648896a5fd994f10a4', '0000-00-00', 0, '', 'masculino', '', '', '', '', '', NULL, NULL, NULL, 1, '', NULL, 1, 'ENABLED', '2018-11-28 21:46:42', '2018-08-29 09:45:30');
+(1, 'Rafael', 'Gutierrez', '', 'rafael@estic.com', '', '35bb6b2292c543a3bea479606e6755a9034aca3fd0a3be02180890ad5ea673a334dec82fec386880b7010ace74e4957d9bbf6e7c0e9182648896a5fd994f10a4', '0000-00-00', 0, '', 'masculino', '', '', '', '', '', NULL, NULL, NULL, 1, '', NULL, 1, 'ENABLED', '2018-11-28 21:46:42', '2018-08-29 09:45:30');
 
 -- --------------------------------------------------------
 
@@ -523,107 +445,107 @@ INSERT INTO `migrations` (`version`) VALUES
 --
 ALTER TABLE `es_cities`
   ADD PRIMARY KEY (`id_city`),
-  ADD UNIQUE KEY `ci_cities_id_city_uindex` (`id_city`),
-  ADD KEY `ci_cities_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_cities_ibfk_2` (`id_user_modified`),
-  ADD KEY `ci_cities_ibfk_3` (`id_capital`),
-  ADD KEY `ci_cities_ibfk_4` (`id_region`),
-  ADD KEY `ci_cities_ibfk_5` (`id_cover_picture`);
+  ADD UNIQUE KEY `es_cities_id_city_uindex` (`id_city`),
+  ADD KEY `es_cities_ibfk_1` (`id_user_created`),
+  ADD KEY `es_cities_ibfk_2` (`id_user_modified`),
+  ADD KEY `es_cities_ibfk_3` (`id_capital`),
+  ADD KEY `es_cities_ibfk_4` (`id_region`),
+  ADD KEY `es_cities_ibfk_5` (`id_cover_picture`);
 
 --
 -- Indices de la tabla `es_domains`
 --
 ALTER TABLE `es_domains`
   ADD PRIMARY KEY (`id_domain`),
-  ADD UNIQUE KEY `ci_domains_id_domain_uindex` (`id_domain`),
-  ADD KEY `ci_domains_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_domains_ibfk_2` (`id_user_modified`);
+  ADD UNIQUE KEY `es_domains_id_domain_uindex` (`id_domain`),
+  ADD KEY `es_domains_ibfk_1` (`id_user_created`),
+  ADD KEY `es_domains_ibfk_2` (`id_user_modified`);
 
 --
 -- Indices de la tabla `es_files`
 --
 ALTER TABLE `es_files`
   ADD PRIMARY KEY (`id_file`),
-  ADD UNIQUE KEY `ci_files_id_file_uindex` (`id_file`),
-  ADD KEY `ci_files_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_files_ibfk_2` (`id_user_modified`),
-  ADD KEY `ci_files_ibfk_3` (`id_parent`);
+  ADD UNIQUE KEY `es_files_id_file_uindex` (`id_file`),
+  ADD KEY `es_files_ibfk_1` (`id_user_created`),
+  ADD KEY `es_files_ibfk_2` (`id_user_modified`),
+  ADD KEY `es_files_ibfk_3` (`id_parent`);
 
 --
 -- Indices de la tabla `es_logs`
 --
 ALTER TABLE `es_logs`
   ADD PRIMARY KEY (`id_log`),
-  ADD UNIQUE KEY `ci_logs_id_log_uindex` (`id_log`);
+  ADD UNIQUE KEY `es_logs_id_log_uindex` (`id_log`);
 
 --
 -- Indices de la tabla `es_modules`
 --
 ALTER TABLE `es_modules`
   ADD PRIMARY KEY (`id_module`),
-  ADD UNIQUE KEY `ci_modules_id_module_uindex` (`id_module`),
-  ADD KEY `ci_modules_ibfk_1` (`id_user_modified`),
-  ADD KEY `ci_modules_ibfk_2` (`id_user_created`);
+  ADD UNIQUE KEY `es_modules_id_module_uindex` (`id_module`),
+  ADD KEY `es_modules_ibfk_1` (`id_user_modified`),
+  ADD KEY `es_modules_ibfk_2` (`id_user_created`);
 
 --
 -- Indices de la tabla `es_provincias`
 --
 ALTER TABLE `es_provincias`
   ADD PRIMARY KEY (`id_provincia`),
-  ADD UNIQUE KEY `ci_provincias_id_provincia_uindex` (`id_provincia`),
-  ADD KEY `ci_provincias_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_provincias_ibfk_2` (`id_user_modified`),
-  ADD KEY `ci_provincias_ibfk_3` (`id_ciudad`),
-  ADD KEY `ci_provincias_ibfk_4` (`id_municipio`);
+  ADD UNIQUE KEY `es_provincias_id_provincia_uindex` (`id_provincia`),
+  ADD KEY `es_provincias_ibfk_1` (`id_user_created`),
+  ADD KEY `es_provincias_ibfk_2` (`id_user_modified`),
+  ADD KEY `es_provincias_ibfk_3` (`id_ciudad`),
+  ADD KEY `es_provincias_ibfk_4` (`id_municipio`);
 
 --
 -- Indices de la tabla `es_roles`
 --
 ALTER TABLE `es_roles`
   ADD PRIMARY KEY (`id_role`),
-  ADD UNIQUE KEY `ci_roles_id_role_uindex` (`id_role`),
-  ADD KEY `ci_roles_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_roles_ibfk_2` (`id_user_modified`);
+  ADD UNIQUE KEY `es_roles_id_role_uindex` (`id_role`),
+  ADD KEY `es_roles_ibfk_1` (`id_user_created`),
+  ADD KEY `es_roles_ibfk_2` (`id_user_modified`);
 
 --
 -- Indices de la tabla `es_sessions`
 --
 ALTER TABLE `es_sessions`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `ci_sessions_ibfk_1` (`id_user`);
+  ADD KEY `es_sessions_ibfk_1` (`id_user`);
 
 --
 -- Indices de la tabla `es_tables`
 --
 ALTER TABLE `es_tables`
   ADD PRIMARY KEY (`id_table`),
-  ADD UNIQUE KEY `ci_tables_id_table_uindex` (`id_table`),
-  ADD KEY `ci_tables_ibfk_4` (`id_module`),
+  ADD UNIQUE KEY `es_tables_id_table_uindex` (`id_table`),
+  ADD KEY `es_tables_ibfk_4` (`id_module`),
   ADD KEY `id_user_created` (`id_user_created`),
   ADD KEY `id_user_modified` (`id_user_modified`),
-  ADD KEY `ci_tables_ibfk_3` (`id_role`);
+  ADD KEY `es_tables_ibfk_3` (`id_role`);
 
 --
 -- Indices de la tabla `es_tables_roles`
 --
 ALTER TABLE `es_tables_roles`
   ADD PRIMARY KEY (`id_table_role`),
-  ADD UNIQUE KEY `ci_tables_roles_id_table_role_uindex` (`id_table_role`),
-  ADD KEY `ci_tables_roles_ibfk_1` (`id_user_created`),
-  ADD KEY `ci_tables_roles_ibfk_2` (`id_user_modified`),
-  ADD KEY `ci_tables_roles_ibfk_3` (`id_table`),
-  ADD KEY `ci_tables_roles_ibfk_4` (`id_role`);
+  ADD UNIQUE KEY `es_tables_roles_id_table_role_uindex` (`id_table_role`),
+  ADD KEY `es_tables_roles_ibfk_1` (`id_user_created`),
+  ADD KEY `es_tables_roles_ibfk_2` (`id_user_modified`),
+  ADD KEY `es_tables_roles_ibfk_3` (`id_table`),
+  ADD KEY `es_tables_roles_ibfk_4` (`id_role`);
 
 --
 -- Indices de la tabla `es_users`
 --
 ALTER TABLE `es_users`
   ADD PRIMARY KEY (`id_user`),
-  ADD UNIQUE KEY `ci_users_id_user_uindex` (`id_user`),
-  ADD KEY `ci_users_ibfk_1` (`id_role`),
-  ADD KEY `ci_users_ibfk_2` (`id_provincia`),
-  ADD KEY `ci_users_ibfk_3` (`id_cover_picture`),
-  ADD KEY `ci_users_ibfk_4` (`id_city`);
+  ADD UNIQUE KEY `es_users_id_user_uindex` (`id_user`),
+  ADD KEY `es_users_ibfk_1` (`id_role`),
+  ADD KEY `es_users_ibfk_2` (`id_provincia`),
+  ADD KEY `es_users_ibfk_3` (`id_cover_picture`),
+  ADD KEY `es_users_ibfk_4` (`id_city`);
 
 --
 -- Indices de la tabla `es_users_roles`

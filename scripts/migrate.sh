@@ -20,3 +20,5 @@ else
   fi
 fi
 echo -e "\012"
+
+composer dump-autoload
