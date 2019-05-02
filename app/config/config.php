@@ -529,14 +529,12 @@ $config['rewrite_short_tags'] = FALSE;
  $config['system_name'] = 'defensor';
  $config['isys_modules'] = array('base' => 'ci');
  $config['app_modules'] = array('admin' => 'hbf');
- $config['tables_mvc_excepted'] = array('migrations');
  $config['dirMigrationTables'] = [DOCUMENTROOT.'orm/migrations/tables/'];
 
  $config['english_words'] = ['files','sessions','roles','settings','cities','modules','tables','domains'];
 
  $config['controlFields'] = ['status','estado','change_count','id_user_modified','id_user_created','date_modified','date_created'];
 
- $config['foreach_key'] = 'object';
 
  $config['appDirs'] = array(
      'modules' => [
