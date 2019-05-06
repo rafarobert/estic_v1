@@ -1,7 +1,10 @@
 
-[submodule "proyects/ibolsast-crm"]
-	path = proyects/ibolsast-crm
+[submodule "isys"]
+	path = isys
+	url = https://rafarobert@github.com/rafarobert/isys.git
+[submodule "projects/herbalife-nutrition"]
+	path = projects/herbalife-nutrition
+	url = https://rafarobert@github.com/rafarobert/herbalife-nutrition.git
+[submodule "projects/ibolsast-crm"]
+	path = projects/ibolsast-crm
 	url = https://rafarobert@github.com/rafarobert/ibolsast-crm.git
-[submodule "proyects/herbalife-nutrition"]
-	path = proyects/herbalife-nutrition
-	url = https://github.com/rafarobert/herbalife-nutrition.git

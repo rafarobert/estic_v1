@@ -21,4 +21,4 @@ else
 fi
 echo -e "\012"
 
-composer dump-autoload
+composer update

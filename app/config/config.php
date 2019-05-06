@@ -362,7 +362,7 @@ $config['encryption_key'] = '8aP118e*4500343+256Ic03e50dO87t3';
 $config['sess_driver'] = 'database';
 $config['sess_cookie_name'] = 'scn_app';
 $config['sess_expiration'] = 7200;
-$config['sess_save_path'] = 'ci_sessions';
+$config['sess_save_path'] = 'es_sessions';
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
@@ -517,80 +517,46 @@ $config['rewrite_short_tags'] = FALSE;
 */
  $config['proxy_ips'] = '';
 
- $config['soft_user'] = 'rafaelgutierrez';
-
- $config['mod_table'] = 'ci_tables';
- $config['mod_migIndex'] = 2;
-
- $config['dir_modulos_views'] = 'views/';
- $config['file_empty_php'] = '<?php ?>';
- $config['no_backup_message'] = '// *** defensor: No se realizo backup de este archivo ***';
- $config['owner'] = 'Rafael Gutierrez Gaspar';
- $config['system_name'] = 'defensor';
- $config['isys_modules'] = array('base' => 'ci');
- $config['app_modules'] = array('admin' => 'hbf');
- $config['dirMigrationTables'] = [DOCUMENTROOT.'orm/migrations/tables/'];
-
- $config['english_words'] = ['files','sessions','roles','settings','cities','modules','tables','domains'];
-
- $config['controlFields'] = ['status','estado','change_count','id_user_modified','id_user_created','date_modified','date_created'];
-
-
- $config['appDirs'] = array(
-     'modules' => [
-         'admin' => 'HMVC',
-         'front' => 'HMVC'
-     ],
- );
 
  $config['sys'] = array(
-     'estic' => 'es',
-     'es' => array(
+   'core' => 'estic',
+   'es' => 'estic',
+   'estic' => array(
+         'sign' => 'es',
          'dir' => 'estic/',
          'name' => 'estic',
-         'id' => 2
+         'id' => 1
      ),
-     'admin' => 'dfa',
-     'dfa' => array(
-         'dir' => 'admin/',
-         'name' => 'admin',
-         'id' => 3
-     ),
-     'front' => 'frt',
-     'frt' => array(
+
+   'frontend' => 'front',
+   'frt' => 'front',
+   'front' => array(
+         'sign' => 'frt',
          'dir' => 'front/',
          'name' => 'front',
-         'id' => 4
-     ),
-     'base' => 'ci',
-     'ci' => array(
-         'dir' => 'base/',
-         'name' => 'base',
-         'id' => 1
+         'id' => 2
      )
  );
 
- $config['main_modules_enabled'] = ['ci','dfa'];
- $config['modulos'] = array(
-    'Sistema',
-);
+ $config["estic"] = [
+   [
+     "host" => "local.estic.com.bo",
+      "hostname" => "local.estic.com.bo",
+      "protocol"=> "http:",
+      "port"=> "80",
+      "origin"=> "http://local.estic.com.bo/",
+      "dest"=> "http://local.estic.com.bo/",
+      "root-path"=> "",
+      "type-url"=> "dns",
+      "type-env"=> "dev"
+   ]
+ ];
 
- $config['site_name'] = 'Defensoria del Pueblo';
- $config['site_title'] = 'Defensoria del Pueblo - Admin';
- $config['site_domain'] = 'estic.com.bo';
 
- $config['meta_reply_to'] = "info@estic.com.bo";
- $config['meta_languaje'] = "Spanish";
- $config['meta_descripcion'] = "Sistema de administracion de la defensoria del pueblo";
- $config['meta_keywords'] = "Bolivia,Defensoria,Pueblo";
- $config['meta_viewport'] = "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0";
- $config['meta_theme-color"'] ="#8C3524";
- $config['meta_name'] = "estic.com.bo - Pagina virtual de la Defensoria del Pueblo";
- $config['meta_title'] = 'Defensoria del Pueblo';
+$config['site_name'] = 'estic';
+$config['site_title'] = 'Estic - Admin';
+$config['site_domain'] = 'estic.com.bo';
 
- $config['file_max_size'] = 100000000;
- $config['file_types'] = 'gif|jpg|png|jpeg|pdf|docx|xlsx|zip|mp4|mp3';
- $config['file_types_js'] = '.gif,.jpg,.png,.jpeg,.pdf,.docx,.xlsx,.zip,.mp4,.mp3,image/*,application/pdf,video/*,audio/*';
- $config['file_without_tumbs'] = '.xlsx|.docx|.zip|.pdf|.mp4|.mp3';
- $config['img_max_width'] = 10000;
- $config['img_max_height'] = 10000;
+
+// --------------------------------- fin de las configuraciones --------------------------------
+
