@@ -552,6 +552,7 @@ $config['rewrite_short_tags'] = FALSE;
    ]
  ];
 
+$config['base_url'] = 'http://local.estic.com.bo/';
 
 $config['site_name'] = 'estic';
 $config['site_title'] = 'Estic - Admin';
