@@ -43,7 +43,7 @@ module.exports = function(grunt) {
                     'assets/canvas/css/animate.css',
                     'assets/canvas/css/magnific-popup.css',
                     'assets/canvas/css/responsive.css',
-                    'assets/css/estic-front.css'
+                    'assets/css/estic-front.min.css'
                     ]
                 }
             }
