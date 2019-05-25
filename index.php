@@ -68,7 +68,7 @@ $_SERVER['PWD'] = isset($_SERVER['ESTIC_ORIGIN']) ? '../' : $_SERVER['PWD'];
 
 // Path to the system folder
 define('PWD', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD'].'/' : ''));
-define('BASEPATH', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD']."/$system_path/" : $system_path.'/' ));
+define('BASEPATH', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD']."$system_path/" : $system_path.'/' ));
 
 require_once BASEPATH . 'core/CodeIgniter.php';
 
