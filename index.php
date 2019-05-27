@@ -62,14 +62,9 @@
  * Include the path if the folder is not in the same directory
  * as this file.
  */
-$system_path = 'isys';
 
-$_SERVER['PWD'] = isset($_SERVER['ESTIC_ORIGIN']) ? '../' : $_SERVER['PWD'];
+$system = 'isys';
 
-// Path to the system folder
-define('PWD', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD'].'/' : ''));
-define('BASEPATH', str_replace('\\', '/', isset($_SERVER['PWD']) ? $_SERVER['PWD']."$system_path/" : $system_path.'/' ));
-
-require_once BASEPATH . 'core/CodeIgniter.php';
+require_once "$system/core/CodeIgniter.php";
 
 //TODO: Arreglar la creacion de modelos con nombres plurales, ejemplo: hbf_detalles_vasos con id id_detalle_vaso crea codigo con id: id_detall_vaso
