@@ -1,32 +1,41 @@
 propel:
   database:
-      connections:
-          estic_prod:
-              adapter: mysql
-              classname: Propel\Runtime\Connection\ConnectionWrapper
-              dsn: mysql:host=127.0.0.1;dbname=estic_prod
-              user: root
-              password: 095065
-              attributes:
-          estic_dev:
-              adapter: mysql
-              classname: Propel\Runtime\Connection\DebugPDO
-              dsn: mysql:host=127.0.0.1;dbname=estic_dev
-              user: root
-              password: 
-              attributes:
+    connections:
+      prod:
+        adapter: mysql
+        classname: Propel\Runtime\Connection\ConnectionWrapper
+        dsn: mysql:host=127.0.0.1;dbname=estic_prod
+        user: rgutierrez
+        password: 095065
+        attributes:
+      dev:
+        adapter: mysql
+        classname: Propel\Runtime\Connection\DebugPDO
+        dsn: mysql:host=127.0.0.1;dbname=estic_dev
+        user: estic
+        password: estic123
+        attributes:
+      test:
+        adapter: mysql
+        classname: Propel\Runtime\Connection\DebugPDO
+        dsn: mysql:host=127.0.0.1;dbname=estic_test
+        user: estic
+        password: estic123
+        attributes:
   runtime:
-      log:
-          defaultLogger:
-              type: stream
-              path: ./propel_log.txt
-              level: 100
-      defaultConnection: estic_prod
-      connections:
-          - estic_prod
-          - estic_dev
+    log:
+      defaultLogger:
+        type: stream
+        path: ./propel_log.txt
+        level: 100
+    defaultConnection: prod
+    connections:
+      - prod
+      - dev
+      - test
   generator:
-      defaultConnection: estic_prod
-      connections:
-          - estic_prod
-          - estic_dev
+    defaultConnection: prod
+    connections:
+      - prod
+      - dev
+      - test
