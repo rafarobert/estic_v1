@@ -538,17 +538,20 @@ $config['rewrite_short_tags'] = FALSE;
      )
  );
 
- $config["estic"] = [
+ $config["hosts"] = [
    [
-     "host" => "local.estic.com.bo",
-      "hostname" => "local.estic.com.bo",
-      "protocol"=> "http:",
-      "port"=> "80",
-      "origin"=> "http://local.estic.com.bo/",
-      "dest"=> "http://local.estic.com.bo/",
-      "root-path"=> "",
-      "type-url"=> "dns",
-      "type-env"=> "dev"
+     "estic" => [
+       "host" => "local.estic.com.bo",
+       "hostname-core" => "local.estic.com.bo",
+       "hostname" => "local.estic.com.bo",
+       "protocol"=> "http:",
+       "port"=> "80",
+       "origin"=> "http://local.estic.com.bo/",
+       "dest"=> "http://local.estic.com.bo/",
+       "root-path"=> "",
+       "type-url"=> "dns",
+       "type-env"=> "dev"
+      ]
    ]
  ];
 

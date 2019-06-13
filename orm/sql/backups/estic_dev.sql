@@ -350,7 +350,7 @@ CREATE TABLE `es_tables_roles` (
 -- Volcado de datos para la tabla `es_tables_roles`
 --
 
-INSERT INTO `es_tables_roles` (`id_table_role`, `id_table`, `id_role`, `estado`, `change_count`, `id_user_modified`, `id_user_created`, `date_modified`, `date_created`) VALUES
+INSERT INTO `es_tables_roles` (`id_table_role`, `id_table`, `id_role`, status, `change_count`, `id_user_modified`, `id_user_created`, `date_modified`, `date_created`) VALUES
 (101, 101, 1, 'ENABLED', 0, 1, 1, '2019-05-02 02:12:20', '2019-05-02 02:12:20'),
 (102, 102, 1, 'ENABLED', 0, 1, 1, '2019-05-02 02:12:21', '2019-05-02 02:12:21'),
 (103, 103, 1, 'ENABLED', 0, 1, 1, '2019-05-02 02:12:21', '2019-05-02 02:12:21'),
